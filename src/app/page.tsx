@@ -140,17 +140,18 @@ export default function Home() {
                 <CardContent className="flex-grow">
                   <p className="text-muted-foreground">{project.description}</p>
                 </CardContent>
-                <CardFooter>
-                  {project.link && (
+                <CardFooter className="flex-wrap gap-4">
+                  {project.links?.map((link) => (
                     <Link
-                      href={project.link}
+                      key={link.url}
+                      href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline flex items-center gap-2 text-sm font-medium"
                     >
-                      {project.linkType === 'code' ? 'View Code' : 'View Demo'} <ExternalLink className="w-4 h-4" />
+                      {link.type === 'code' ? 'View Code' : 'View Demo'} <ExternalLink className="w-4 h-4" />
                     </Link>
-                  )}
+                  ))}
                 </CardFooter>
               </Card>
             ))}

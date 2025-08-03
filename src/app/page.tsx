@@ -133,11 +133,9 @@ export default function Home() {
                     <Rocket className="w-5 h-5 text-accent"/>
                     {project.name}
                   </CardTitle>
-                  <CardDescription asChild>
-                    <div className="font-code text-xs !mt-2">
-                      {project.tech.join(' · ')}
-                    </div>
-                  </CardDescription>
+                  <div className="font-code text-xs !mt-2 text-muted-foreground">
+                    {project.tech.join(' · ')}
+                  </div>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <p className="text-muted-foreground">{project.description}</p>

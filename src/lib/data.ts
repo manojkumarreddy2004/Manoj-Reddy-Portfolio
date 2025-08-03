@@ -47,7 +47,7 @@ export const projects = [
     name: "JobZap",
     description: "Conceived and built JobZap, a Node.js/Express backend for a job-match platform featuring RESTful APIs, JWT-secured RBAC, Redis-driven caching, and PostgreSQL persistence, all Docker-containerized for seamless deployment, delivering sub-100ms response times at scale.",
     tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker", "JWT"],
-    link: null,
+    link: "https://github.com/manojkumarreddy2004/JobZap",
   },
   {
     name: "AI-Powered Spam Detection using SqueezeBERT",

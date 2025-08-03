@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { useState, useEffect } from 'react';
+import { ThemeToggle } from './theme-toggle';
 
 export function AppHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -93,6 +94,7 @@ export function AppHeader() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+          <ThemeToggle />
         </div>
       </div>
     </header>

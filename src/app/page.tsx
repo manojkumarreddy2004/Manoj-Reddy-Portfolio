@@ -133,8 +133,10 @@ export default function Home() {
                     <Rocket className="w-5 h-5 text-accent"/>
                     {project.name}
                   </CardTitle>
-                  <CardDescription className="font-code text-xs !mt-2">
-                    {project.tech.join(' · ')}
+                  <CardDescription>
+                    <div className="font-code text-xs !mt-2">
+                      {project.tech.join(' · ')}
+                    </div>
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
@@ -220,7 +222,7 @@ export default function Home() {
         <Section id="connect" title="Get in Touch">
           <Card className="max-w-4xl mx-auto">
             <CardHeader>
-              <CardTitle className="font-headline">Connect With Me</CardTitle>
+              <CardTitle>Connect With Me</CardTitle>
               <CardDescription>
                 Have a question or want to work together? Leave your details and I'll get back to you.
               </CardDescription>

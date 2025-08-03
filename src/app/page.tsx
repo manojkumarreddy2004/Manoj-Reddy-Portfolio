@@ -67,6 +67,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   className="rounded-full shadow-2xl"
+                  unoptimized
                 />
               </div>
               <div className="text-center md:text-left">

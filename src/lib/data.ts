@@ -21,26 +21,36 @@ export const education = [
   },
 ];
 
-export const skills = [
+export const skills = {
+  "Programming Languages": [
     { name: "Python" },
     { name: "Java" },
     { name: "JavaScript" },
     { name: "C++" },
+  ],
+  "Web Technologies": [
     { name: "HTML" },
     { name: "CSS" },
     { name: "React.js" },
     { name: "Node.js" },
     { name: "Express.js" },
+  ],
+  "Database Technologies": [
     { name: "MySQL" },
     { name: "SQLite" },
+  ],
+  "Tools & Platforms": [
     { name: "Git & GitHub" },
     { name: "Linux" },
     { name: "VS Code" },
     { name: "Docker" },
     { name: "Redis" },
+  ],
+  "Concepts": [
     { name: "Data Structures" },
     { name: "OOPs" },
-];
+  ],
+};
 
 export const projects = [
   {

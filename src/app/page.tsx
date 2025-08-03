@@ -29,10 +29,23 @@ import {
   Languages,
   Rocket,
   Cloud,
-  BrainCircuit
+  BrainCircuit,
+  Database,
+  Terminal,
+  Cpu,
+  Server,
+  Code2,
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+
+const skillIcons: { [key: string]: React.ElementType } = {
+  'Programming Languages': Code2,
+  'Web Technologies': Code,
+  'Database Technologies': Database,
+  'Tools & Platforms': Terminal,
+  'Concepts': BrainCircuit,
+};
 
 export default function Home() {
   return (
@@ -88,15 +101,28 @@ export default function Home() {
         </Section>
 
         <Section id="skills" title="Technical Skills">
-          <Card>
-            <CardContent className="p-6">
-                <div className="flex flex-wrap gap-2">
-                    {skills.map((skill, index) => (
-                        <Badge key={index} variant="secondary" className="text-sm font-medium px-3 py-1">{skill.name}</Badge>
-                    ))}
-                </div>
-            </CardContent>
-          </Card>
+            <div className="grid md:grid-cols-2 gap-8">
+              {Object.entries(skills).map(([category, skillList]) => {
+                const Icon = skillIcons[category] || Code;
+                return (
+                  <Card key={category}>
+                    <CardHeader>
+                      <CardTitle className="font-headline text-xl flex items-center gap-3">
+                        <Icon className="w-6 h-6 text-primary" />
+                        {category}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        {skillList.map((skill) => (
+                          <Badge key={skill.name} variant="secondary" className="text-sm font-medium px-3 py-1">{skill.name}</Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
         </Section>
         
         <Section id="projects" title="Projects">

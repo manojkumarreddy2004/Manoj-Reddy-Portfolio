@@ -1,6 +1,7 @@
+
 import Link from "next/link"
-import { Github, Linkedin, Code } from "lucide-react"
-import { socialLinks } from "@/lib/data"
+import { Github, Linkedin, Code, Mail, Phone } from "lucide-react"
+import { socialLinks, contactInfo } from "@/lib/data"
 import { Button } from "@/components/ui/button"
 
 const HackerRankIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -19,10 +20,23 @@ const HackerRankIcon = (props: React.SVGProps<SVGSVGElement>) => (
 export function AppFooter() {
   return (
     <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
-        <p className="text-sm text-muted-foreground mb-4 sm:mb-0">
-          &copy; {new Date().getFullYear()} M Manoj Kumar Reddy. All Rights Reserved.
-        </p>
+      <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start gap-4 mb-2">
+                <a href={`mailto:${contactInfo.email}`} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary">
+                    <Mail className="h-4 w-4" />
+                    {contactInfo.email}
+                </a>
+                <a href={`tel:${contactInfo.phone}`} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary">
+                    <Phone className="h-4 w-4" />
+                    {contactInfo.phone}
+                </a>
+            </div>
+             <p className="text-sm text-muted-foreground">
+                &copy; {new Date().getFullYear()} M Manoj Kumar Reddy. All Rights Reserved.
+            </p>
+        </div>
+
         <div className="flex items-center space-x-2">
           <Button variant="ghost" size="icon" asChild>
             <Link href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

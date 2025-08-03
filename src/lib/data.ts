@@ -1,3 +1,4 @@
+
 export const about = "A dedicated and passionate Computer Science and Engineering student with a strong foundation in programming, web development, and database management. Eager to leverage my skills to build innovative solutions and contribute to a dynamic team.";
 
 export const education = [
@@ -112,3 +113,8 @@ export const hobbies = {
     activities: ["Chess", "Cricket", "Volleyball"],
     interests: ["Artificial Intelligence", "Cloud Computing"]
 };
+
+export const contactInfo = {
+  email: "your-email@example.com",
+  phone: "+1 (555) 123-4567"
+}

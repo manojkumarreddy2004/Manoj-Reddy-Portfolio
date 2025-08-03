@@ -85,8 +85,8 @@ export const projects = [
     name: "Jobby App",
     description: "Constructed an all-in-one job searching platform. Built pages for Login, Home, Jobs, and Job item details, ensured secure authentication with JWT tokens, and persisted login state with local storage.",
     tech: ["React.js", "JavaScript", "CSS", "Bootstrap", "REST API", "JWT"],
-    link: "http://jobbymanoj98.ccbp.tech",
-    linkType: "demo",
+    link: "https://github.com/manojkumarreddy2004/Jobby-App/tree/main",
+    linkType: "code",
   },
   {
     name: "Todos Application",

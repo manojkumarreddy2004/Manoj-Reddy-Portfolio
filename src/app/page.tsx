@@ -133,7 +133,7 @@ export default function Home() {
                     <Rocket className="w-5 h-5 text-accent"/>
                     {project.name}
                   </CardTitle>
-                  <CardDescription>
+                  <CardDescription asChild>
                     <div className="font-code text-xs !mt-2">
                       {project.tech.join(' · ')}
                     </div>

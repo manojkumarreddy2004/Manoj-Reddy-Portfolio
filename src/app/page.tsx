@@ -32,6 +32,7 @@ import {
   BrainCircuit
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -40,9 +41,17 @@ export default function Home() {
       <main className="flex-1">
         <Section
           id="about"
-          className="pt-16 md:pt-24"
+          className="min-h-screen flex items-center justify-center"
         >
-          <div className="container mx-auto text-center">
+          <div className="container mx-auto text-center flex flex-col items-center">
+            <Image
+              src="https://placehold.co/150x150.png"
+              alt="M Manoj Kumar Reddy"
+              width={150}
+              height={150}
+              className="rounded-full mb-6"
+              data-ai-hint="man portrait"
+            />
             <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
               M Manoj Kumar Reddy
             </h1>

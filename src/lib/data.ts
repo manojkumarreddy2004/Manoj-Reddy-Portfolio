@@ -9,6 +9,12 @@ export const education = [
     grade: "CGPA: 8.78/10",
   },
   {
+    degree: "Industry Ready Certification in Full-stack Development",
+    institution: "Nxtwave Disruptive Technologies",
+    period: "Oct 2022 - Ongoing",
+    grade: "",
+  },
+  {
     degree: "12th Grade (PUC | PCMB)",
     institution: "Reva University, Bengaluru",
     period: "2022",

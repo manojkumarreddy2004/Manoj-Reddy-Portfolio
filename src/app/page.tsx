@@ -160,20 +160,22 @@ export default function Home() {
         <Section id="certifications" title="Certifications">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {certifications.map((cert, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <CardTitle className="font-headline text-xl flex items-center gap-3">
-                    <Award className="w-6 h-6 text-primary" />
-                    {cert.name}
-                  </CardTitle>
-                  <CardDescription>
-                    {cert.issuer}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">Issued {cert.date}</p>
-                </CardContent>
-              </Card>
+              <Link key={index} href={cert.link} target="_blank" rel="noopener noreferrer" className="block transition-transform transform hover:-translate-y-1 hover:shadow-2xl rounded-lg">
+                <Card className="h-full">
+                  <CardHeader>
+                    <CardTitle className="font-headline text-xl flex items-center gap-3">
+                      <Award className="w-6 h-6 text-primary" />
+                      {cert.name}
+                    </CardTitle>
+                    <CardDescription>
+                      {cert.issuer}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">Issued {cert.date}</p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </Section>

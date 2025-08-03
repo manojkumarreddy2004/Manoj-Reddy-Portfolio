@@ -72,26 +72,31 @@ export const certifications = [
     name: "Node.Js",
     issuer: "Nxtwave",
     date: "2025",
+    link: "https://certificates.ccbp.in/academy/node-js?id=KWKWMWOUKY"
   },
   {
     name: "Programming Foundations with Python",
     issuer: "Nxtwave",
     date: "2023",
+    link: "https://certificates.ccbp.in/academy/programming-foundations-with-python?id=DZHUKMIEVP"
   },
   {
     name: "Introduction to Databases",
     issuer: "Nxtwave",
     date: "2024",
+    link: "https://certificates.ccbp.in/academy/introduction-to-databases?id=GPJHOZCYPX"
   },
   {
     name: "Data Structures",
     issuer: "Coursera",
     date: "2024",
+    link: "https://www.coursera.org/account/accomplishments/verify/CTCHU6T3UE8F"
   },
   {
     name: "Relational Database Design",
     issuer: "Coursera",
     date: "2023",
+    link: "https://www.coursera.org/account/accomplishments/verify/3PBKGAX66EHZ"
   },
 ];
 

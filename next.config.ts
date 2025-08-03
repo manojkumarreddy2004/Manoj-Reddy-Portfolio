@@ -23,6 +23,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  env: {
+    NEXT_PUBLIC_GITHUB_REPO: repoName,
+  },
 };
 
 export default nextConfig;

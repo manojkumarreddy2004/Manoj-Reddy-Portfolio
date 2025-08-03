@@ -59,30 +59,35 @@ export const projects = [
     description: "Conceived and built JobZap, a Node.js/Express backend for a job-match platform featuring RESTful APIs, JWT-secured RBAC, Redis-driven caching, and PostgreSQL persistence, all Docker-containerized for seamless deployment, delivering sub-100ms response times at scale.",
     tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker", "JWT"],
     link: "https://github.com/manojkumarreddy2004/JobZap",
+    linkType: "code",
   },
   {
     name: "AI-Powered Spam Detection using SqueezeBERT",
     description: "Developed a spam detection model using SqueezeBERT, achieving high accuracy in classifying emails.",
     tech: ["Python", "SqueezeBERT", "Numpy", "Pandas", "Matplotlib"],
     link: null,
+    linkType: "code",
   },
   {
     name: "Nxt Trendz (E-commerce Clone)",
     description: "Developed a cutting-edge e-commerce platform inspired by Amazon and Flipkart. Built pages for Login, Products, and Product details with React components, and enabled secure authentication and authorization with JWT tokens and REST API calls.",
     tech: ["React.js", "JavaScript", "CSS", "Bootstrap", "REST API", "JWT"],
     link: "http://manojecom098.ccbp.tech",
+    linkType: "demo",
   },
   {
     name: "Jobby App",
     description: "Constructed an all-in-one job searching platform. Built pages for Login, Home, Jobs, and Job item details, ensured secure authentication with JWT tokens, and persisted login state with local storage.",
     tech: ["React.js", "JavaScript", "CSS", "Bootstrap", "REST API", "JWT"],
     link: "http://jobbymanoj98.ccbp.tech",
+    linkType: "demo",
   },
   {
     name: "Todos Application",
     description: "Developed a persistent todo application with CRUD operations to track a list of tasks. Implemented CRUD operations and persisted todo list state on page reloads using local storage.",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     link: "http://marktodos.ccbp.tech",
+    linkType: "demo",
   },
 ];
 

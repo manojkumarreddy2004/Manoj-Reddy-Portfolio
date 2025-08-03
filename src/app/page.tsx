@@ -60,12 +60,11 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center">
                 <Image
-                  src="https://placehold.co/300x300.png"
+                  src="/profile.jpg"
                   alt="M Manoj Kumar Reddy"
                   width={300}
                   height={300}
                   className="rounded-full shadow-2xl"
-                  data-ai-hint="man portrait"
                 />
               </div>
               <div className="text-center md:text-left">

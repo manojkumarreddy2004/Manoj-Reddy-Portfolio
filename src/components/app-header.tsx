@@ -1,9 +1,16 @@
+
 'use client';
 
 import Link from 'next/link';
-import { Github, Linkedin, Code, Video, FileText } from 'lucide-react';
+import { Github, Linkedin, Code, Video, FileText, ChevronDown } from 'lucide-react';
 import { socialLinks } from '@/lib/data';
 import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 import { useState, useEffect } from 'react';
 
 export function AppHeader() {
@@ -64,18 +71,28 @@ export function AppHeader() {
                 </Link>
               </Button>
            </div>
-          <Button asChild>
-            <Link href="https://drive.google.com/file/d/1aRFz4dxdP349UO6wUm8zFXwizDdvBZah/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <Video className="mr-2 h-4 w-4" />
-              Video Resume
-            </Link>
-          </Button>
-           <Button asChild>
-            <Link href="https://drive.google.com/file/d/1Yxynmx4tdIHweIp5AW-oZIcutHQi1ult/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <FileText className="mr-2 h-4 w-4" />
-              Resume
-            </Link>
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button>
+                My Resume
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem asChild>
+                <Link href="https://drive.google.com/file/d/1aRFz4dxdP349UO6wUm8zFXwizDdvBZah/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <Video className="mr-2 h-4 w-4" />
+                  <span>Video Resume</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="https://drive.google.com/file/d/1Yxynmx4tdIHweIp5AW-oZIcutHQi1ult/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <FileText className="mr-2 h-4 w-4" />
+                  <span>Resume (PDF)</span>
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </header>

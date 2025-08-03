@@ -1,7 +1,7 @@
 import { AppHeader } from '@/components/app-header';
 import { AppFooter } from '@/components/app-footer';
 import { Section } from '@/components/section';
-import { ContentDetectorForm } from '@/components/content-detector-form';
+import { ConnectForm } from '@/components/connect-form';
 import {
   Card,
   CardContent,
@@ -12,7 +12,6 @@ import {
 } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import {
-  portfolioContentString,
   about,
   education,
   skills,
@@ -171,18 +170,18 @@ export default function Home() {
             </div>
         </Section>
 
-        <Section id="content-detector" title="Portfolio Content Detector">
+        <Section id="connect" title="Get in Touch">
           <Card className="max-w-4xl mx-auto" style={{
             background: 'linear-gradient(145deg, hsl(var(--card)), hsl(var(--background)))',
           }}>
             <CardHeader>
-              <CardTitle className="font-headline">Analyze Your Text</CardTitle>
+              <CardTitle className="font-headline">Connect With Me</CardTitle>
               <CardDescription>
-                Enter any text (like a job description) to see how many concepts from my portfolio are present.
+                Have a question or want to work together? Leave your details and I'll get back to you.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ContentDetectorForm portfolioContent={portfolioContentString} />
+              <ConnectForm />
             </CardContent>
           </Card>
         </Section>

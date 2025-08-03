@@ -25,7 +25,7 @@ export function AppHeader() {
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#certifications', label: 'Certs' },
-    { href: '#content-detector', label: 'AI Tool' },
+    { href: '#connect', label: 'Connect' },
   ];
 
   return (

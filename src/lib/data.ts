@@ -97,17 +97,3 @@ export const hobbies = {
     activities: ["Chess", "Cricket", "Volleyball"],
     interests: ["Artificial Intelligence", "Cloud Computing"]
 };
-
-const allText = [
-  about,
-  ...education.map(e => `${e.degree} at ${e.institution}`),
-  ...skills.map(s => s.name),
-  ...projects.map(p => `${p.name}: ${p.description} using ${p.tech.join(', ')}`),
-  ...certifications.map(c => `${c.name} from ${c.issuer}`),
-  ...hobbies.languages,
-  ...hobbies.activities,
-  ...hobbies.interests,
-  "Computer Science Engineering"
-].join('\n');
-
-export const portfolioContentString = allText;

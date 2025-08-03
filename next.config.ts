@@ -1,11 +1,13 @@
 import type {NextConfig} from 'next';
 
-const repoName = process.env.GITHUB_REPOSITORY ? process.env.GITHUB_REPOSITORY.split('/')[1] : '';
+const isProd = process.env.NODE_ENV === 'production';
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1];
+
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: repoName ? `/${repoName}` : '',
-  assetPrefix: repoName ? `/${repoName}/` : '',
+  basePath: isProd && repoName ? `/${repoName}` : '',
+  assetPrefix: isProd && repoName ? `/${repoName}/` : '',
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -22,9 +24,6 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-  },
-  env: {
-    NEXT_PUBLIC_GITHUB_REPO: repoName,
   },
 };
 

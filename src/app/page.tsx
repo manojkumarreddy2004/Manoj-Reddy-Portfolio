@@ -29,6 +29,8 @@ import {
   GraduationCap,
   Languages,
   Rocket,
+  Cloud,
+  BrainCircuit
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -43,7 +45,7 @@ export default function Home() {
         >
           <div className="container mx-auto text-center">
             <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
-              Manoj Reddy
+              M Manoj Kumar Reddy
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               {about}
@@ -78,9 +80,8 @@ export default function Home() {
                 <div key={index}>
                   <div className="flex justify-between items-center mb-1">
                     <span className="font-medium text-sm">{skill.name}</span>
-                    <span className="text-xs text-muted-foreground">{skill.proficiency}%</span>
                   </div>
-                  <Progress value={skill.proficiency} className="h-2 [&>div]:bg-[#A0C4FF]" />
+                  <Progress value={90} className="h-2 [&>div]:bg-[#A0C4FF]" />
                 </div>
               ))}
             </CardContent>
@@ -88,7 +89,7 @@ export default function Home() {
         </Section>
         
         <Section id="projects" title="Projects">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <Card key={index} className="flex flex-col transition-transform transform hover:-translate-y-1 hover:shadow-xl">
                 <CardHeader>
@@ -104,14 +105,16 @@ export default function Home() {
                   <p className="text-muted-foreground">{project.description}</p>
                 </CardContent>
                 <CardFooter>
-                  <Link
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline flex items-center gap-2 text-sm font-medium"
-                  >
-                    View Code <ExternalLink className="w-4 h-4" />
-                  </Link>
+                  {project.link && (
+                    <Link
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline flex items-center gap-2 text-sm font-medium"
+                    >
+                      View Code <ExternalLink className="w-4 h-4" />
+                    </Link>
+                  )}
                 </CardFooter>
               </Card>
             ))}
@@ -157,9 +160,12 @@ export default function Home() {
                 </Card>
                  <Card>
                     <CardContent className="p-6">
-                        <BookOpen className="w-8 h-8 mx-auto mb-2 text-accent"/>
+                        <div className="flex justify-center items-center gap-2">
+                          <BrainCircuit className="w-8 h-8 mx-auto mb-2 text-accent"/>
+                          <Cloud className="w-8 h-8 mx-auto mb-2 text-accent"/>
+                        </div>
                         <p className="font-medium">Interests</p>
-                        <p className="text-sm text-muted-foreground">Exploring new technologies</p>
+                        <p className="text-sm text-muted-foreground">{hobbies.interests.join(', ')}</p>
                     </CardContent>
                 </Card>
             </div>

@@ -8,7 +8,7 @@ export function AppFooter() {
     <footer className="bg-background border-t">
       <div className="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
         <p className="text-sm text-muted-foreground mb-4 sm:mb-0">
-          &copy; {new Date().getFullYear()} Manoj Reddy. All Rights Reserved.
+          &copy; {new Date().getFullYear()} M Manoj Kumar Reddy. All Rights Reserved.
         </p>
         <div className="flex items-center space-x-2">
           <Button variant="ghost" size="icon" asChild>

@@ -2,89 +2,100 @@ export const about = "A dedicated and passionate Computer Science and Engineerin
 
 export const education = [
   {
-    degree: "B.TECH in Computer Science",
-    institution: "Sreenidhi Institute of Science and Technology",
-    period: "2020 - 2024",
-    grade: "CGPA: 8.61/10",
+    degree: "B.TECH in Computer Science and Engineering",
+    institution: "Alliance University",
+    period: "2022 - 2026",
+    grade: "CGPA: 8.78/10",
   },
   {
-    degree: "Intermediate (MPC)",
-    institution: "Sri Chaitanya Junior College",
-    period: "2018 - 2020",
-    grade: "Percentage: 97.4%",
+    degree: "12th Grade (PUC | PCMB)",
+    institution: "Reva University, Bengaluru",
+    period: "2022",
+    grade: "Percentage: 92.3%",
   },
   {
-    degree: "10th Grade (ICSE)",
-    institution: "Johnson Grammar School",
-    period: "2018",
-    grade: "Percentage: 94.6%",
+    degree: "10th Grade (SSLC)",
+    institution: "Vani Vidhyashram High School, Palamaner",
+    period: "2020",
+    grade: "Percentage: 92.1%",
   },
 ];
 
 export const skills = [
-  { name: "C++", proficiency: 90 },
-  { name: "Java", proficiency: 90 },
-  { name: "Python", proficiency: 80 },
-  { name: "JavaScript", proficiency: 85 },
-  { name: "HTML", proficiency: 95 },
-  { name: "CSS", proficiency: 90 },
-  { name: "ReactJS", proficiency: 85 },
-  { name: "NodeJS", proficiency: 80 },
-  { name: "ExpressJS", proficiency: 80 },
-  { name: "MySQL", proficiency: 85 },
-  { name: "MongoDB", proficiency: 80 },
-  { name: "Git & GitHub", proficiency: 90 },
+    { name: "Python" },
+    { name: "Java" },
+    { name: "JavaScript" },
+    { name: "C++" },
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "React.js" },
+    { name: "Node.js" },
+    { name: "Express.js" },
+    { name: "MySQL" },
+    { name: "SQLite" },
+    { name: "Git & GitHub" },
+    { name: "Linux" },
+    { name: "VS Code" },
+    { name: "Docker" },
+    { name: "Redis" },
+    { name: "Data Structures" },
+    { name: "OOPs" },
 ];
 
 export const projects = [
   {
-    name: "Personalized News Feed Aggregator",
-    description: "A web application that gathers news from various sources using the NewsAPI and delivers a personalized feed based on user preferences.",
-    tech: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB", "NewsAPI"],
-    link: "https://github.com/reddy-manoj/News-Aggregator",
+    name: "JobZap",
+    description: "Conceived and built JobZap, a Node.js/Express backend for a job-match platform featuring RESTful APIs, JWT-secured RBAC, Redis-driven caching, and PostgreSQL persistence, all Docker-containerized for seamless deployment, delivering sub-100ms response times at scale.",
+    tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker", "JWT"],
+    link: null,
   },
   {
-    name: "E-commerce Website",
-    description: "A fully functional e-commerce platform with features like product catalog, shopping cart, and user authentication.",
-    tech: ["HTML", "CSS", "JavaScript", "ReactJS", "NodeJS", "ExpressJS", "MySQL"],
-    link: "https://github.com/reddy-manoj/E-commerce-website",
-  },
-  {
-    name: "Student Management System",
-    description: "A desktop application to manage student records, including personal details, academic performance, and attendance.",
-    tech: ["Java", "Swing", "MySQL"],
-    link: "https://github.com/reddy-manoj/Student-Management-System",
+    name: "AI-Powered Spam Detection using SqueezeBERT",
+    description: "Developed a spam detection model using SqueezeBERT, achieving high accuracy in classifying emails.",
+    tech: ["Python", "SqueezeBERT", "Numpy", "Pandas", "Matplotlib"],
+    link: null,
   },
 ];
 
 export const certifications = [
   {
-    name: "Problem Solving (Basic)",
-    issuer: "HackerRank",
-    date: "October 2022",
+    name: "Node.Js",
+    issuer: "Nxtwave",
+    date: "2025",
   },
   {
-    name: "Java (Basic)",
-    issuer: "HackerRank",
-    date: "October 2022",
+    name: "Programming Foundations with Python",
+    issuer: "Nxtwave",
+    date: "2023",
   },
   {
-    name: "SQL (Basic)",
-    issuer: "HackerRank",
-    date: "December 2022",
+    name: "Introduction to Databases",
+    issuer: "Nxtwave",
+    date: "2024",
+  },
+  {
+    name: "Data Structures",
+    issuer: "Coursera",
+    date: "2024",
+  },
+  {
+    name: "Relational Database Design",
+    issuer: "Coursera",
+    date: "2023",
   },
 ];
 
 export const socialLinks = {
-  linkedin: "https://www.linkedin.com/in/manoj-reddy-y-6415a7229/",
-  github: "https://github.com/reddy-manoj",
-  leetcode: "https://leetcode.com/reddy_manoj_2003/",
-  hackerrank: "https://www.hackerrank.com/profile/y_manojreddy2003",
+  linkedin: "https://www.linkedin.com/in/m-manoj-kumar-reddy",
+  github: "https://github.com/manojkumarreddy2004",
+  leetcode: "https://leetcode.com/u/manojkumarreddy098/",
+  hackerrank: "https://www.hackerrank.com/profile/kmanojBTECH22",
 };
 
 export const hobbies = {
-    languages: ["English", "Hindi", "Telugu"],
-    activities: ["Badminton", "Chess", "Gym", "Swimming"],
+    languages: ["Telugu", "English", "Hindi", "Kannada"],
+    activities: ["Chess", "Cricket", "Volleyball"],
+    interests: ["Artificial Intelligence", "Cloud Computing"]
 };
 
 const allText = [
@@ -95,6 +106,7 @@ const allText = [
   ...certifications.map(c => `${c.name} from ${c.issuer}`),
   ...hobbies.languages,
   ...hobbies.activities,
+  ...hobbies.interests,
   "Computer Science Engineering"
 ].join('\n');
 

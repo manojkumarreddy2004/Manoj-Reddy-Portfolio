@@ -34,7 +34,7 @@ export function AppHeader() {
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="font-headline font-bold text-xl tracking-tight">
-          Manoj Reddy
+          M Manoj Kumar Reddy
         </Link>
         <nav className="hidden md:flex items-center gap-4">
           {navItems.map((item) => (

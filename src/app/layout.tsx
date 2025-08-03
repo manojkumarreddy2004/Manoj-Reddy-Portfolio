@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Manoj Reddy | Portfolio',
-  description: 'Portfolio of Manoj Reddy, a Computer Science and Engineering student.',
+  title: 'M Manoj Kumar Reddy | Portfolio',
+  description: 'Portfolio of M Manoj Kumar Reddy, a Computer Science and Engineering student.',
 };
 
 export default function RootLayout({

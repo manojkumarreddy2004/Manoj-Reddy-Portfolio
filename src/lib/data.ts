@@ -115,6 +115,6 @@ export const hobbies = {
 };
 
 export const contactInfo = {
-  email: "your-email@example.com",
-  phone: "+1 (555) 123-4567"
+  email: "manchurimanoj4@gmail.com",
+  phone: "+91 9704565451"
 }

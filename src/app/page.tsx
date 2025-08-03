@@ -10,7 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
+import { Badge } from '@/components/ui/badge';
 import {
   about,
   education,
@@ -43,21 +43,27 @@ export default function Home() {
           id="about"
           className="min-h-screen flex items-center justify-center"
         >
-          <div className="container mx-auto text-center flex flex-col items-center">
-            <Image
-              src="https://placehold.co/150x150.png"
-              alt="M Manoj Kumar Reddy"
-              width={150}
-              height={150}
-              className="rounded-full mb-6"
-              data-ai-hint="man portrait"
-            />
-            <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
-              M Manoj Kumar Reddy
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              {about}
-            </p>
+          <div className="container mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="flex justify-center">
+                <Image
+                  src="https://placehold.co/300x300.png"
+                  alt="M Manoj Kumar Reddy"
+                  width={300}
+                  height={300}
+                  className="rounded-full shadow-2xl"
+                  data-ai-hint="man portrait"
+                />
+              </div>
+              <div className="text-center md:text-left">
+                <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
+                  M Manoj Kumar Reddy
+                </h1>
+                <p className="text-lg md:text-xl text-muted-foreground">
+                  {about}
+                </p>
+              </div>
+            </div>
           </div>
         </Section>
 
@@ -83,15 +89,12 @@ export default function Home() {
 
         <Section id="skills" title="Technical Skills">
           <Card>
-            <CardContent className="p-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6">
-              {skills.map((skill, index) => (
-                <div key={index}>
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="font-medium text-sm">{skill.name}</span>
-                  </div>
-                  <Progress value={90} className="h-2 [&>div]:bg-[#A0C4FF]" />
+            <CardContent className="p-6">
+                <div className="flex flex-wrap gap-2">
+                    {skills.map((skill, index) => (
+                        <Badge key={index} variant="secondary" className="text-sm font-medium px-3 py-1">{skill.name}</Badge>
+                    ))}
                 </div>
-              ))}
             </CardContent>
           </Card>
         </Section>

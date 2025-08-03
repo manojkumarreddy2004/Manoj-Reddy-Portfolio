@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
-const faviconSvg = `<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%234361EE%22 /><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-family=%22'Space Grotesk', sans-serif%22 font-size=%2260%22 font-weight=%22bold%22 fill=%22white%22>M</text></svg>`;
-const faviconDataUri = `data:image/svg+xml,${faviconSvg}`;
+const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="16" fill="#4361EE" /><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="60" font-weight="bold" fill="white">M</text></svg>`;
+const faviconDataUri = `data:image/svg+xml;base64,${btoa(faviconSvg)}`;
 
 
 export const metadata: Metadata = {

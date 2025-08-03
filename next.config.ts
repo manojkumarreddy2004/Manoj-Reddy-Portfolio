@@ -1,7 +1,7 @@
 import type {NextConfig} from 'next';
 
 const isProd = process.env.NODE_ENV === 'production';
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'Manoj-Reddy-Portfolio';
+const repoName = 'Manoj-Reddy-Portfolio';
 
 const nextConfig: NextConfig = {
   output: 'export',

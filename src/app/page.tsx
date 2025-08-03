@@ -47,6 +47,8 @@ const skillIcons: { [key: string]: React.ElementType } = {
   'Concepts': BrainCircuit,
 };
 
+const repoName = process.env.NEXT_PUBLIC_REPO_NAME || '';
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh">
@@ -60,7 +62,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center">
                 <Image
-                  src={`/profile.jpg`}
+                  src={`${repoName}/profile.jpg`}
                   alt="M Manoj Kumar Reddy"
                   width={300}
                   height={300}

@@ -66,6 +66,24 @@ export const projects = [
     tech: ["Python", "SqueezeBERT", "Numpy", "Pandas", "Matplotlib"],
     link: null,
   },
+  {
+    name: "Nxt Trendz (E-commerce Clone)",
+    description: "Developed a cutting-edge e-commerce platform inspired by Amazon and Flipkart. Built pages for Login, Products, and Product details with React components, and enabled secure authentication and authorization with JWT tokens and REST API calls.",
+    tech: ["React.js", "JavaScript", "CSS", "Bootstrap", "REST API", "JWT"],
+    link: "http://manojecom098.ccbp.tech",
+  },
+  {
+    name: "Jobby App",
+    description: "Constructed an all-in-one job searching platform. Built pages for Login, Home, Jobs, and Job item details, ensured secure authentication with JWT tokens, and persisted login state with local storage.",
+    tech: ["React.js", "JavaScript", "CSS", "Bootstrap", "REST API", "JWT"],
+    link: "http://jobbymanoj98.ccbp.tech",
+  },
+  {
+    name: "Todos Application",
+    description: "Developed a persistent todo application with CRUD operations to track a list of tasks. Implemented CRUD operations and persisted todo list state on page reloads using local storage.",
+    tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    link: "http://marktodos.ccbp.tech",
+  },
 ];
 
 export const certifications = [

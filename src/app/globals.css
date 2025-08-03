@@ -7,7 +7,7 @@
     --background: 210 25% 95.3%; /* #F0F4F8 */
     --foreground: 224 71% 4%; /* A very dark blue for text */
 
-    --card: 0 0% 100%;
+    --card: 210 25% 100%; /* Upped from 95.3% for a whiter card */
     --card-foreground: 224 71% 4%;
 
     --popover: 0 0% 100%;
@@ -63,5 +63,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: linear-gradient(to bottom right, hsl(var(--background)), hsl(var(--muted)));
   }
 }

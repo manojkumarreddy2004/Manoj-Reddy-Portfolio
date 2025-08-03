@@ -90,7 +90,7 @@ export default function Home() {
         <Section id="projects" title="Projects">
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="flex flex-col transition-transform transform hover:-translate-y-1 hover:shadow-xl">
+              <Card key={index} className="flex flex-col transition-transform transform hover:-translate-y-1 hover:shadow-2xl">
                 <CardHeader>
                   <CardTitle className="font-headline text-xl flex items-center gap-2">
                     <Rocket className="w-5 h-5 text-accent"/>
@@ -171,9 +171,7 @@ export default function Home() {
         </Section>
 
         <Section id="connect" title="Get in Touch">
-          <Card className="max-w-4xl mx-auto" style={{
-            background: 'linear-gradient(145deg, hsl(var(--card)), hsl(var(--background)))',
-          }}>
+          <Card className="max-w-4xl mx-auto">
             <CardHeader>
               <CardTitle className="font-headline">Connect With Me</CardTitle>
               <CardDescription>
